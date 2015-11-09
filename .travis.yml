@@ -9,8 +9,8 @@ env:
   global:
   - GH_REF: github.com/chad-autry/alpine-rdiff-backup
 script:
-- docker build -t chadautry/alpine-rsync:latest .
-- if [[ ! -z "$TRAVIS_TAG" ]]; then docker tag chadautry/alpine-rsync:latest chadautry/alpine-rdiff-backup:$TRAVIS_TAG ; fi
+- docker build -t chadautry/alpine-rdiff-backup:latest .
+- if [[ ! -z "$TRAVIS_TAG" ]]; then docker tag chadautry/alpine-rdiff-backup:latest chadautry/alpine-rdiff-backup:$TRAVIS_TAG ; fi
 after_success:
 - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 - docker push chadautry/alpine-rdiff-backup
