@@ -1,10 +1,10 @@
 {
-  "name": "alpine-rsync",
+  "name": "alpine-rdiff-backup",
   "version": "1.0.1",
-  "description": "Docker containerized rsync",
+  "description": "Docker containerized rdiff-backup",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chad-autry/alpine-rsync"
+    "url": "https://github.com/chad-autry/alpine-rdiff-backup"
   },
   "keywords": [
     "Docker",
@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chad-autry/alpine-rsync/issues"
+    "url": "https://github.com/chad-autry/alpine-rdiff-backup/issues"
   },
-  "homepage": "https://github.com/chad-autry/alpine-rsync"
+  "homepage": "https://github.com/chad-autry/alpine-rdiff-backup"
 }
